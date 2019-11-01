@@ -1,0 +1,9 @@
+<h1>TaskList:</h1>
+
+<ul>
+    <% @task_lists.each do |list| %>
+        <li>
+            <%= link_to list.title, "/all_tasklists/#{list.id}" %>
+        </li>
+    <% end %>
+</ul>

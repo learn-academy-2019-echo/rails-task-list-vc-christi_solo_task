@@ -1,0 +1,16 @@
+<h1> <%=@task_details.title %>: </h1>
+
+<ul>
+    <li>
+        <%= @task_details.description %>: 
+    </li>       
+    <li>
+        Completed? <%= @task_details.is_done %>
+    </li>
+    <li>
+        Due Date: <%= @task_details.due_date %>
+    </li>
+    
+</ul>
+
+<%= link_to("Projects List", "/all_tasklists/#{@task_details.task_list_id}/") %>
